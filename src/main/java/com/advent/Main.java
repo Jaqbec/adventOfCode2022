@@ -10,6 +10,7 @@ public class Main {
     private static final Day22 day22 = new Day22();
     private static final Day31 day31 = new Day31();
     private static final Day32 day32 = new Day32();
+    private static final Day41 day41 = new Day41();
 
     public static void main(String[] args) {
 
@@ -25,6 +26,9 @@ public class Main {
                 day31.getSumOfPrioritiesOfDuplicatedItems(adventHelper.readFileLines("rucksackContents.txt")));
         System.out.println("(Day 3 2) Sum of priorities of duplicated items: " +
                 day32.getSumOfPrioritiesOfDuplicatedItems(adventHelper.readFileLines("rucksackContents.txt")));
+        System.out.println("Sum of priorities of duplicated items: " +
+                day41.getAmountOfDuplicatedPairs(adventHelper.readFileLines("pairsOfElfs.txt")));
+
 
     }
 }
