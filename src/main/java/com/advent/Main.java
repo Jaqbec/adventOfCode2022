@@ -13,6 +13,8 @@ public class Main {
     private static final Day41 day41 = new Day41();
     private static final Day42 day42 = new Day42();
     private static final Day51 day51 = new Day51();
+    private static final Day52 day52 = new Day52();
+    private static final Day61 day61 = new Day61();
 
     public static void main(String[] args) {
 
@@ -34,5 +36,9 @@ public class Main {
                 day42.getAmountOfDuplicatedPairs(adventHelper.readFileLines("pairsOfElfs.txt")));
         System.out.println("(Day 5 1) Top containers After operation: " +
                 day51.getTopContainers(adventHelper.readFileLines(10, "crateConfigurationAndMoves.txt")));
+        System.out.println("(Day 5 2) Top containers After operation: " +
+                day52.getTopContainers(adventHelper.readFileLines(10, "crateConfigurationAndMoves.txt")));
+        System.out.println("(Day 6 1) Marker appears after this amount of characters: " +
+                day61.getNumberOfCharactersToBeReadBeforeMarker(adventHelper.readFileLines("radioSignal.txt")));
     }
 }

@@ -34,7 +34,7 @@ public class Day51 {
                 .get();
     }
 
-    private static void moveContainers(List<String> strings, List<String> containersList) {
+    protected void moveContainers(List<String> strings, List<String> containersList) {
         int howManyContainersToMove = parseInt(strings.get(0));
         int indexOfFromContainer = parseInt(strings.get(1)) - 1;
         int indexOfToContainers = parseInt(strings.get(2)) - 1;
