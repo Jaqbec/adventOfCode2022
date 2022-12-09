@@ -11,6 +11,8 @@ public class Main {
     private static final Day31 day31 = new Day31();
     private static final Day32 day32 = new Day32();
     private static final Day41 day41 = new Day41();
+    private static final Day42 day42 = new Day42();
+    private static final Day51 day51 = new Day51();
 
     public static void main(String[] args) {
 
@@ -28,7 +30,9 @@ public class Main {
                 day32.getSumOfPrioritiesOfDuplicatedItems(adventHelper.readFileLines("rucksackContents.txt")));
         System.out.println("Sum of priorities of duplicated items: " +
                 day41.getAmountOfDuplicatedPairs(adventHelper.readFileLines("pairsOfElfs.txt")));
-
-
+        System.out.println("Sum of priorities of duplicated items: " +
+                day42.getAmountOfDuplicatedPairs(adventHelper.readFileLines("pairsOfElfs.txt")));
+        System.out.println("Top containers After operation: " +
+                day51.getTopContainers(adventHelper.readFileLines(10, "crateConfigurationAndMoves.txt")));
     }
 }

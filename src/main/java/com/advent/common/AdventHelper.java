@@ -10,6 +10,10 @@ import java.util.stream.Collectors;
 public class AdventHelper {
 
     public List<String> readFileLines(String fileName) {
+        return readFileLines(0, fileName);
+    }
+
+    public List<String> readFileLines(Integer skip, String fileName) {
         BufferedReader stringBuffer;
         try {
             URL filePath =
@@ -22,6 +26,7 @@ public class AdventHelper {
         }
         return stringBuffer
                 .lines()
+                .skip(skip)
                 .collect(Collectors.toList());
     }
 }
