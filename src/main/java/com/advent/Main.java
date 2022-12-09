@@ -28,11 +28,11 @@ public class Main {
                 day31.getSumOfPrioritiesOfDuplicatedItems(adventHelper.readFileLines("rucksackContents.txt")));
         System.out.println("(Day 3 2) Sum of priorities of duplicated items: " +
                 day32.getSumOfPrioritiesOfDuplicatedItems(adventHelper.readFileLines("rucksackContents.txt")));
-        System.out.println("Sum of priorities of duplicated items: " +
+        System.out.println("(Day 4 1) Sum of priorities of duplicated items: " +
                 day41.getAmountOfDuplicatedPairs(adventHelper.readFileLines("pairsOfElfs.txt")));
-        System.out.println("Sum of priorities of duplicated items: " +
+        System.out.println("(Day 4 2) Sum of priorities of duplicated items: " +
                 day42.getAmountOfDuplicatedPairs(adventHelper.readFileLines("pairsOfElfs.txt")));
-        System.out.println("Top containers After operation: " +
+        System.out.println("(Day 5 1) Top containers After operation: " +
                 day51.getTopContainers(adventHelper.readFileLines(10, "crateConfigurationAndMoves.txt")));
     }
 }
