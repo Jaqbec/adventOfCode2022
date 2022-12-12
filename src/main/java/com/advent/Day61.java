@@ -11,7 +11,7 @@ public class Day61 {
                 .get();
     }
 
-    private Integer checkMarker(String s) {
+    protected Integer checkMarker(String s) {
         for (int i = 0; i < s.length() - 4; i++) {
             long count = s
                     .substring(i, i + 4)
