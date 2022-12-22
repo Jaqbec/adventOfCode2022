@@ -16,6 +16,7 @@ public class Main {
     private static final Day52 day52 = new Day52();
     private static final Day61 day61 = new Day61();
     private static final Day62 day62 = new Day62();
+    private static final Day71 day71 = new Day71();
 
     public static void main(String[] args) {
 
@@ -43,5 +44,7 @@ public class Main {
                 day61.getNumberOfCharactersToBeReadBeforeMarker(adventHelper.readFileLines("radioSignal.txt")));
         System.out.println("(Day 6 2) Marker appears after this amount of characters: " +
                 day62.getNumberOfCharactersToBeReadBeforeMarker(adventHelper.readFileLines("radioSignal.txt")));
+        System.out.println("(Day 7 1) Marker appears after this amount of characters: " +
+                day71.getSumOfDirectoriesWithContentsLessThan100000(adventHelper.readFileLines("radioSignal.txt")));
     }
 }
